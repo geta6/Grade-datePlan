@@ -1,0 +1,13 @@
+extends ../jade_templates/layout/default
+
+block container
+  .container
+    p 情報を入力してください
+    form(method='post')
+      p
+        label デートコース名：
+        input(name="course_name")
+      p
+        label 投稿者：
+        input(name="user")
+      input(type="submit")
