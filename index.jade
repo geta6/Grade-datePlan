@@ -1,13 +1,9 @@
-doctype 5
+extends jade_templates/layout/default
 
-html(lang='ja')
-  head
-    title mark date
-    link(rel="stylesheet",href="css/index.css",type="text/css")
-    meta(charset="utf-8")
-  body
+block container
+  .container
     h1 Mark date
     h2 このサイトはデートを作り、それを他社が採点するデートプラン作成サイトです。
-      input(type="button",value="作る")
-      input(type="button",value="採点する")
+      input(type="button",value="作る",onclick="make1.html")
+      input(type="button",value="採点する",onclick="grade1.html")
 
